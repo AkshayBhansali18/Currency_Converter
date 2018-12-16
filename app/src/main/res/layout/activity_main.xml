@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="#2C3335"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <TextView
+        android:id="@+id/converted"
+        android:layout_width="0dp"
+        android:layout_height="61dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="84dp"
+        android:layout_marginEnd="8dp"
+        android:background="#DAE0E2"
+        android:textColor="@android:color/black"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/rupees" />
+
+    <Button
+        android:id="@+id/dollar"
+        android:layout_width="125dp"
+        android:layout_height="70dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="48dp"
+        android:background="#FFF222"
+        android:onClick="toDollars"
+        android:text="$"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/converted" />
+
+    <Button
+        android:id="@+id/euros"
+        android:layout_width="125dp"
+        android:layout_height="70dp"
+        android:layout_marginStart="8dp"
+
+        android:layout_marginEnd="8dp"
+        android:background="#FFF222"
+        android:onClick="toEuros"
+        android:text="€"
+        android:textSize="24sp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/dollar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.521"
+        app:layout_constraintStart_toEndOf="@+id/dollar" />
+
+    <Button
+        android:id="@+id/pound"
+        android:layout_width="129dp"
+        android:layout_height="70dp"
+
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        android:background="#FFF222"
+        android:onClick="toPounds"
+        android:text="£"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/dollar"
+        app:layout_constraintTop_toBottomOf="@+id/dollar"
+        app:layout_constraintVertical_bias="0.435" />
+
+    <Button
+        android:id="@+id/yen"
+        android:layout_width="125dp"
+        android:layout_height="70dp"
+        android:layout_marginStart="8dp"
+
+        android:layout_marginEnd="8dp"
+        android:background="#FFF222"
+        android:onClick="toYen"
+        android:text="¥"
+        android:textSize="24sp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/pound"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/pound" />
+
+    <EditText
+        android:id="@+id/rupees"
+        android:layout_width="356dp"
+        android:layout_height="56dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="76dp"
+        android:layout_marginEnd="8dp"
+        android:background="#DAE0E2"
+        android:ems="10"
+        android:hint="₹"
+        android:inputType="textPersonName"
+        android:textColor="@android:color/black"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</android.support.constraint.ConstraintLayout>
